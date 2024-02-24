@@ -1,0 +1,28 @@
+@mixin toolsStyle($width,$left){
+    position: absolute;
+    width: $width;
+    height: 36px;
+    top: 235px;
+    left: $left;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#tool1{
+    @include toolsStyle(105px,284px)
+}
+#tool2{
+    @include toolsStyle(138px,409px)
+}
+#tool3{
+    @include toolsStyle(105px,567px)
+}
+#tool4{
+    @include toolsStyle(132px,692px)
+}
+#tool5{
+    @include toolsStyle(126px,844px)
+}
+#tool6{
+    @include toolsStyle(140px,990px)
+}

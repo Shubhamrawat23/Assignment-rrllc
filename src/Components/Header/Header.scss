@@ -1,0 +1,73 @@
+header{
+    width: 1614px;
+    height: 64px;
+    background-color: rgba(33, 39, 49, 1);
+    
+    > ul{
+        display: flex;
+        list-style-type: none;
+    }
+
+    #searchImg{
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 19px;
+        left: 489px;     
+        z-index: 1;  
+    }
+    #search{
+        position: absolute;
+        width: 258px;
+        height: 37px;
+        top: 14px;
+        left: 480px;        
+        border-radius: 8px;
+        border: 1px solid rgba(225, 228, 230, 1)
+    }
+    
+    #categories{
+        position: absolute;
+        width: 73px;
+        height: 20px;
+        top: 23px;
+        left: 817px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(209, 214, 218, 1);        
+    }
+
+    #webBuilder{
+        position: absolute;
+        width: 142px;
+        height: 20px;
+        top: 23px;
+        left: 943px; 
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(209, 214, 218, 1);        ;               
+    }
+
+    #deals{
+        position: absolute;
+        width: 91px;
+        height: 20px;
+        top: 23px;
+        left: 1138px;      
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(209, 214, 218, 1);          
+    }
+}

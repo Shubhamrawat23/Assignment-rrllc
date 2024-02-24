@@ -1,0 +1,19 @@
+@mixin dealsStyle($top,$left){
+    position: absolute;
+    width: 333px;
+    height: 425px;
+    top: $top;
+    left: $left;
+    border-radius: 12px;   
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#Deal1{
+    @include dealsStyle(1806px,300px)
+}
+#Deal2{
+    @include dealsStyle(1803px,655px)
+}
+#Deal3{
+    @include dealsStyle(1793px,1001px)
+}

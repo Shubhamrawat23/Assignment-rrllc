@@ -1,0 +1,169 @@
+#mainBoxOfDeal{
+    border: 1px solid red;
+    position: absolute;
+    width: 333px;
+    height: 425px;
+    top: 1806px;
+    left: 300px;
+    border-radius: 12px;   
+    background-color: rgba(255, 255, 255, 1);
+}
+    
+#dealsImage {
+    position: absolute;
+    width: 141px;
+    height: 103px;
+    top: 37px;
+    left: 96px;
+}
+
+#offerInBlue {
+    position: absolute;
+    width: 69px;
+    height: 28px;
+    top: 199px;
+    left: 20px;
+    border-radius: 8px;
+    background-color: rgba(242, 244, 247, 1);
+}
+
+#BlueText {
+    position: absolute;
+    width: 53px;
+    height: 20px;
+    top: 4px;
+    left: 8px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(7, 71, 134, 1);
+}
+
+#limitedTimeBox {
+    position: absolute;
+    width: 107px;
+    height: 28px;
+    top: 199px;
+    left: 93px;
+    border-radius: 8px;
+    background-color: rgba(242, 244, 247, 1);
+}
+
+#limitedTimeText {
+    position: absolute;
+    width: 91px;
+    height: 20px;
+    top: 4px;
+    left: 8px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(7, 71, 134, 1);
+}
+
+#title {
+    position: absolute;
+    width: 107px;
+    height: 24px;
+    top: 232px;
+    left: 87px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(98, 110, 121, 1);
+}
+
+#descriptionOfRealtedDeals {
+    position: relative;
+    width: 284px;
+    height: 48px;
+    top: 263px;
+    left: 20px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(98, 110, 121, 1);
+}
+
+#price {
+    position: absolute;
+    width: 71px;
+    height: 28px;
+    top: 317px;
+    left: 20px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(92, 104, 116, 1);
+}
+
+#prevPrice {
+    position: absolute;
+    width: 48px;
+    height: 20px;
+    top: 325px;
+    left: 101px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(159, 169, 179, 1);
+}
+
+#offerInRed {
+    position: absolute;
+    width: 63px;
+    height: 20px;
+    top: 325px;
+    left: 161px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(239, 76, 93, 1);
+}
+
+#dealBtn {
+    position: absolute;
+    width: 292px;
+    height: 48px;
+    top: 357px;
+    left: 20px;
+    border-radius: 12px;
+    border: 0px;
+    background-color: rgba(27, 136, 244, 1);
+}
+
+#btnText {
+    position: absolute;
+    width: 77px;
+    height: 24px;
+    top: 11px;
+    left: 108px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}

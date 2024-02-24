@@ -1,0 +1,25 @@
+@mixin dealStyle($height:255px,$top:347px,$left:284px){
+    position: absolute;
+    width: 1024px;
+    height: $height;
+    top: $top;
+    left: $left;
+    border-radius: 12px;    
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 1)
+}
+#layoutDeal1{
+    @include dealStyle;
+    border: 0px;
+}
+#layoutDeal2{
+    @include dealStyle($top:622px);
+    border:0px;
+}
+#layoutDeal3{
+    @include dealStyle($top:915px, $left:285px);
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+#layoutDeal4{
+    @include dealStyle(436px, 1211px, 292px)
+}

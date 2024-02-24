@@ -1,0 +1,140 @@
+
+
+@mixin lineStyle($top){
+    position: absolute;
+    width: 1024px;
+    height: 1.33px;
+    top: $top;
+    background-color: rgba(225, 228, 230, 1);
+}
+
+section{
+    position: absolute;
+    width: 1024px;
+    height: 155px;
+    top: 64px;
+    left: 284px;
+    right: 306px;
+    background-color: rgba(251, 252, 253, 1);
+    p{
+        position: absolute;
+        width: 1006px;
+        height: 60px;
+        top: 38px;
+        right: 18px;       
+        font-family: Inter;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(44, 56, 74, 1);         
+    }
+    hr:nth-of-type(1){
+        @include lineStyle(109.67px)
+    }
+    ul{
+        list-style-type: none;
+    }
+    >div >ul >li >#tickImg{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 125px;
+        right: 1004px;            
+    }
+
+    #lastUpdate{
+        position: absolute;
+        width: 93px;
+        height: 20px;
+        top: 125px;
+        left: 28px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(75, 86, 101, 1);                
+    }
+
+    #dash{
+        position: absolute;
+        width: 6px;
+        height: 20px;
+        top: 125px;
+        left: 123px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(75, 86, 101, 1);                
+    }
+    #date{
+        position: absolute;
+        width: 122px;
+        height: 20px;
+        top: 125px;
+        left: 138px;     
+        font-family: Inter;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(75, 86, 101, 1);           
+    }
+
+    #iCircle{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 125px;
+        left: 272px;        
+    }
+
+    #AdDisc{
+        position: absolute;
+        width: 148px;
+        height: 20px;
+        top: 125px;
+        left: 300px;   
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(75, 86, 101, 1);             
+    }
+
+    #filter{
+        position: absolute;
+        width: 86px;
+        height: 20px;
+        top: 123px;
+        right: 28px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(114, 125, 135, 1);                
+    }
+
+    #DropArrow{
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 120px;
+        left: 1000px;
+        padding: 0px, 4.75px, 0px, 5.75px;        
+    }
+    hr:last-child{
+        @include lineStyle(154.67px)
+    }
+}

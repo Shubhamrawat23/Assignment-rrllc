@@ -1,0 +1,52 @@
+@mixin menuBarStyle($width,$left,$size,$color){
+    position: absolute;
+    width: $width;
+    height: 20px;
+    top: 287px;
+    left: $left;    
+    font-family: Inter;
+    font-size: $size;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $color;    
+}
+
+@mixin menuBarArrowStyle($left){
+    position: absolute;
+    width: 10px;
+    height: 8.25px;
+    top: 293px;
+    left: $left;
+    color: rgba(92, 104, 116, 1);    
+}
+
+#home{
+    @include menuBarStyle(39px,289px,13px,rgba(114, 125, 135, 1))
+}
+#allHost{
+    @include menuBarStyle(96px,358px,14px,rgba(92, 104, 116, 1))
+}
+#hosting{
+    @include menuBarStyle(56px,484px,14px,rgba(114, 125, 135, 1))
+}
+#hosting6{
+    @include menuBarStyle(64px,570px,14px,rgba(92, 104, 116, 1))
+}
+#hosting5{
+    @include menuBarStyle(63px,664px,14px,rgba(92, 104, 116, 1))
+}
+
+#rtArr1{
+    @include menuBarArrowStyle(338px)
+}
+#rtArr2{
+    @include menuBarArrowStyle(464px)
+}
+#rtArr3{
+    @include menuBarArrowStyle(550px)
+}
+#rtArr4{
+    @include menuBarArrowStyle(644px)
+}

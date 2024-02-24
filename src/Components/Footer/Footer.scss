@@ -1,0 +1,113 @@
+footer{
+    position: relative;
+    width: 1592px;
+    height: 452px;
+    top: 2368px;
+    left: 11px;
+    right: 11px;  
+    background-color: rgba(33, 39, 49, 1);
+
+    #categories{
+        position: relative;
+        width: 102px;
+        height: 24px;
+        top: 54px;
+        left: 285px;        
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);        
+    }
+
+    @mixin allCategoryAndContactStyle($width,$top,$left,$size){
+        position: absolute;
+        width: $width;
+        height: 20px;
+        top: $top;
+        left: $left;      
+        font-family: Inter;
+        font-size: $size;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;    
+        color: rgba(182, 189, 196, 1);      
+    }
+
+    #category0{
+        @include allCategoryAndContactStyle(124px, 91px, 284px, 13px)
+    }
+    #category1{
+        @include allCategoryAndContactStyle(124px, 131px, 284px, 13px)
+    }
+    #category2{
+        @include allCategoryAndContactStyle(116px, 171px, 284px, 14px)
+    }
+    #category3{
+        @include allCategoryAndContactStyle(134px, 211px, 284px, 13px)
+    }
+
+    #contact{
+        position: absolute;
+        width: 79px;
+        height: 24px;
+        top: 54px;
+        left: 625px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);                
+    }
+
+    #contact0{
+        @include allCategoryAndContactStyle(53px, 88px, 625px, 14px)
+    }
+    #contact1{
+        @include allCategoryAndContactStyle(92px, 124px, 625px, 14px)
+    }
+    #contact2{
+        @include allCategoryAndContactStyle(114px, 160px, 625px, 14px)
+    }
+    #contact3{
+        @include allCategoryAndContactStyle(72px, 196px, 625px, 13px)
+    }
+    #contact4{
+        @include allCategoryAndContactStyle(40px, 232px, 625px, 14px)
+    }
+
+    #country{
+        position: absolute;
+        width: 90px;
+        height: 20px;
+        top: 119px;
+        left: 1023px;
+        font-family: Inter;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(209, 214, 218, 1);                
+    }
+
+    #DownArrBox{
+        position: absolute;
+        width: 15px;
+        height: 9px;
+        top: 125px;
+        left: 1112px;
+        padding: 0.76px 0.75px 0.74px 0.75px;            
+    }
+    #ctryDownArr{
+        position: absolute;
+        top: 0.76px;
+        left: 0.75px;                
+        color: rgba(225, 228, 230, 1);
+    }
+}
