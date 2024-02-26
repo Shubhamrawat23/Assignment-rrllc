@@ -1,3 +1,5 @@
+@import "../breakPoints";
+
 footer{
     position: relative;
     width: 1592px;
@@ -35,6 +37,10 @@ footer{
         letter-spacing: 0em;
         text-align: left;    
         color: rgba(182, 189, 196, 1);      
+        cursor: pointer;
+        &:hover{
+            color: whitesmoke;
+        }
     }
 
     #category0{
@@ -109,5 +115,75 @@ footer{
         top: 0.76px;
         left: 0.75px;                
         color: rgba(225, 228, 230, 1);
+    }
+}
+
+
+
+/*------Media Query-----------*/
+
+
+
+
+
+
+@include tablets{
+    footer{
+        top: 3250px;
+        left: 0px;
+        width: 775px;
+        height: 350px;
+        #categories{
+            left: 180px;
+        }
+        #category0,#category1,#category2,#category3{
+            left: 179px;
+        }
+        #contact{
+            left: 480px;
+        }
+        #contact0,#contact1,#contact2,#contact3,#contact4{
+            left: 480px;
+        }
+        #country{
+            left: 600px;
+            top: 270px;
+        }
+        #DownArrBox{
+            top: 275px;
+            left: 700px;
+        }
+    }
+}
+
+
+
+
+@include phones{
+    footer{
+        top: 4235px;
+        left: 0px;
+        width: 521px;
+        height: 350px;
+        #categories{
+            left: 55px;
+        }
+        #category0,#category1,#category2,#category3{
+            left: 54px;
+        }
+        #contact{
+            left: 285px;
+        }
+        #contact0,#contact1,#contact2,#contact3,#contact4{
+            left: 285px;
+        }
+        #country{
+            left: 330px;
+            top: 300px;
+        }
+        #DownArrBox{
+            top: 305px;
+            left: 430px;
+        }
     }
 }

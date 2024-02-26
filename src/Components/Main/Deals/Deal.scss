@@ -1,3 +1,5 @@
+@import "../../breakPoints";
+
 @mixin dealStyle($height:255px,$top:347px,$left:284px){
     position: absolute;
     width: 1024px;
@@ -22,4 +24,66 @@
 }
 #layoutDeal4{
     @include dealStyle(436px, 1211px, 292px)
+}
+
+
+/*-------------Media Query-------------*/
+
+
+
+
+@include tablets{
+    #layoutDeal1{
+        width: 715px;
+        height: 410px;
+        top: 340px;
+        left: 30px;
+    }
+    #layoutDeal2{
+        width: 715px;
+        height: 410px;
+        top: 795px;
+        left: 30px;
+    }
+    #layoutDeal3{
+        width: 715px;
+        height: 410px;
+        top: 1240px;
+        left: 30px;
+    }
+    #layoutDeal4{
+        width: 715px;
+        height: 500px;
+        top: 1685px;
+        left: 30px;
+    }
+}
+
+
+
+@include phones{
+    #layoutDeal1{
+        width: 430px;
+        height: 550px;
+        top: 410px;
+        left: 30px;
+    }
+    #layoutDeal2{
+        width: 430px;
+        height: 550px;
+        top: 1010px;
+        left: 30px;
+    }
+    #layoutDeal3{
+        width: 430px;
+        height: 550px;
+        top: 1598px;
+        left: 30px;
+    }
+    #layoutDeal4{
+        width: 430px;
+        height: 550px;
+        top: 2188px;
+        left: 30px;
+    }
 }

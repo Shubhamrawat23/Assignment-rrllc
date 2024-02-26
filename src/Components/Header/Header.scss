@@ -1,3 +1,5 @@
+@import '../_breakPoints';
+
 header{
     width: 1614px;
     height: 64px;
@@ -23,7 +25,8 @@ header{
         top: 14px;
         left: 480px;        
         border-radius: 8px;
-        border: 1px solid rgba(225, 228, 230, 1)
+        border: 1px solid rgba(225, 228, 230, 1);
+        padding: 0 0 0 5px;
     }
     
     #categories{
@@ -38,7 +41,11 @@ header{
         line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
-        color: rgba(209, 214, 218, 1);        
+        color: rgba(209, 214, 218, 1);
+        cursor: pointer;
+        &:hover{
+            color: whitesmoke;
+        }    
     }
 
     #webBuilder{
@@ -53,7 +60,11 @@ header{
         line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
-        color: rgba(209, 214, 218, 1);        ;               
+        color: rgba(209, 214, 218, 1);
+        cursor: pointer;
+        &:hover{
+            color: whitesmoke;
+        }             
     }
 
     #deals{
@@ -68,6 +79,82 @@ header{
         line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
-        color: rgba(209, 214, 218, 1);          
+        color: rgba(209, 214, 218, 1);
+        cursor: pointer;
+        &:hover{
+            color: whitesmoke;
+        }          
+    }
+
+}
+
+
+/*---------MeadiaQueries--------*/
+
+@mixin phoneHeader($top,$left){
+    top: $top;
+    left: $left;
+}
+
+
+
+
+
+@include  tablets{
+    header{
+        width: 775px;
+
+        #searchImg{
+            @include phoneHeader(19px, 720px);
+        }
+        #search{
+            @include phoneHeader(18px, 718px);
+            border-radius: 80px;
+            width: 21px;
+            height: 25px;
+        }
+        #R_search{
+            position: absolute;
+            @include phoneHeader(14px,492px);
+            width: 250px;
+            height: 35px;        
+            border-radius: 8px;
+            border: 1px solid rgba(225, 228, 230, 1);
+            padding: 0 0 0 5px;
+        }
+        #categories,#webBuilder,#deals{
+            display: none;
+        }
+    }
+}
+
+
+
+
+@include phones{
+    header{
+        width: 521px;
+
+        #searchImg{
+            @include phoneHeader(19px, 440px);
+        }
+        #search{
+            @include phoneHeader(16px, 438px);
+            border-radius: 50px;
+            width: 22px;
+            height: 25px;
+        }
+        #R_search{
+            position: absolute;
+            @include phoneHeader(14px,300px);
+            width: 170px;
+            height: 35px;        
+            border-radius: 8px;
+            border: 1px solid rgba(225, 228, 230, 1);
+            padding: 0 0 0 5px;
+        }
+        #categories,#webBuilder,#deals{
+            display: none;
+        }
     }
 }

@@ -1,3 +1,5 @@
+@import "../../breakPoints";
+
 @mixin dealsStyle($top,$left){
     position: absolute;
     width: 333px;
@@ -16,4 +18,37 @@
 }
 #Deal3{
     @include dealsStyle(1793px,1001px)
+}
+
+
+
+
+/*------------Media Query-------------*/
+
+
+
+@include tablets{
+    #Deal1{
+        @include dealsStyle(2290px, 75px);
+    }
+    #Deal2{
+        @include dealsStyle(2290px, 405px);
+    }
+    #Deal3{
+        @include dealsStyle(2700px, 242px);
+    }
+}
+
+
+
+@include phones{
+    #Deal1{
+        @include dealsStyle(2840px, 100px);
+    }
+    #Deal2{
+        @include dealsStyle(3280px, 100px);
+    }
+    #Deal3{
+        @include dealsStyle(3730px, 100px);
+    }
 }

@@ -11,6 +11,11 @@
     letter-spacing: 0em;
     text-align: left;
     color: rgba(75, 86, 101, 1);    
+    cursor: pointer;
+    &:hover{
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
 }
 
 #tool1Text{
@@ -20,7 +25,7 @@
     @include toolsTextStyle(106px, 13px)
 }
 #tool3Text{
-    @include toolsTextStyle(73px, 13px)
+    @include toolsTextStyle(75px, 13px)
 }
 #tool4Text{
     @include toolsTextStyle(100px, 13px)

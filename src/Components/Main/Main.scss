@@ -1,3 +1,5 @@
+@import "../breakPoints";
+
 #dealText{
     position: absolute;
     width: 495px;
@@ -12,3 +14,29 @@
     text-align: left;
     color: rgba(44, 56, 74, 1);    
 }
+
+
+
+/*-----------Media Query--------*/
+
+
+
+@include tablets{
+    #dealText{
+        width: 700px;
+        top: 2230px;
+        left: 25px;
+    }
+}
+
+
+@include phones{
+    #dealText{
+        width: 400px;
+        top: 2790px;
+        left: 15px;
+        font-size: 25px;
+    }
+}
+
+

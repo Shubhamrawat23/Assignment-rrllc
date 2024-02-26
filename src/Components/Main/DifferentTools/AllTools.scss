@@ -1,3 +1,6 @@
+@import "../../breakPoints";
+
+
 @mixin toolsStyle($width,$left){
     position: absolute;
     width: $width;
@@ -25,4 +28,63 @@
 }
 #tool6{
     @include toolsStyle(140px,990px)
+}
+
+
+
+
+
+/*-----------Media Query----------*/
+
+
+
+@include tablets{
+   #tool1{
+    left: 20px;
+   }
+   #tool2{
+    left: 125px;
+   }
+   #tool3{
+    left: 255px;
+   }
+   #tool4{
+    left: 372px;
+   }
+   #tool5{
+    left: 510px;
+   }
+   #tool6{
+    left: 625px;
+   }
+}
+
+
+
+
+@include phones{
+    #tool1{
+        top: 260px;
+        left: 30px;
+    }
+    #tool2{
+        top: 260px;
+        left: 180px;
+    }
+    #tool3{
+        top: 260px;
+        left: 350px;
+    }
+    #tool4{
+        top: 300px;
+        left: 30px;
+    }
+    #tool5{
+        top: 300px;
+        left: 180px;
+    }
+    #tool6{
+        top: 300px;
+        left: 350px;
+    }
 }

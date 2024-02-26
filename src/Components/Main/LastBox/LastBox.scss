@@ -1,3 +1,5 @@
+@import "../../breakPoints";
+
 #lastBox{
     position: absolute;
     width: 1024px;
@@ -42,7 +44,8 @@
         border: 0px;
         border-top-right-radius: 12px;
         border-bottom-right-radius: 12px;   
-        background-color: rgba(27, 136, 244, 1);     
+        background-color: rgba(27, 136, 244, 1);   
+        cursor: pointer;  
     }
 
     #SignUpText{
@@ -60,3 +63,72 @@
         color: rgba(255, 255, 255, 1);      ;             
     }
 }
+
+
+
+
+/*-----------Media Query---------*/
+
+
+
+
+
+@include tablets{
+    #lastBox{
+        width: 712px;
+        height: 121px;
+        top: 3190px;
+        left: 35px;
+        #signAndDealText{
+            font-size: 28px;
+            width: 350px;
+        }
+        #emailInput{
+            width: 230px;
+            height: 45px;
+            left: 412px;
+        }
+        #SignUpBtn{
+            width: 65px;
+            height: 50px;
+            left: 642px;
+        }
+        #SignUpText{
+            top: 12x;
+            left: 3px;
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+
+@include phones{
+    #lastBox{
+        width: 500px;
+        height: 121px;
+        top: 4180px;
+        left: 12px;
+        #signAndDealText{
+            font-size: 20px;
+            width: 220px;
+        }
+        #emailInput{
+            width: 170px;
+            height: 30px;
+            left: 260px;
+        }
+        #SignUpBtn{
+            width: 65px;
+            height: 34px;
+            left: 430px;
+        }
+        #SignUpText{
+            top: 6px;
+            left: 3px;
+            font-size: 14px;
+        }
+    }
+}
+
