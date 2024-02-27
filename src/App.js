@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Main/>
+      <Main />
       <Footer category={["Web Builder", "Hosting", "Data Center" ,"Robotic-Automation"]} contact={["Contact", "Privacy Policy", "Terms Of Service", "Categories", "About"]}/>
     </div>
   );

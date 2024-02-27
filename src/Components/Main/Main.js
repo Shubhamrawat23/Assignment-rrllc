@@ -8,7 +8,7 @@ import Deals from "./Deals/Deals";
 
 function Main(){
     return (
-        <>
+        <div id="mainBox">
             <TopBox />
             <AllTools />
             <MenuBar/>
@@ -16,7 +16,7 @@ function Main(){
             <p id="dealText">Related deals you might like for</p>
             <RelatedDeals/>
             <LastBox/>
-        </>
+        </div>
     )
 }
 export default Main;

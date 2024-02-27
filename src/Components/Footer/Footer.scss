@@ -1,12 +1,13 @@
 @import "../breakPoints";
 
 footer{
-    position: relative;
+    position: absolute;
     width: 1592px;
     height: 452px;
-    top: 2368px;
+    top: 2432px;
     left: 11px;
     right: 11px;  
+    bottom: 16px;
     background-color: rgba(33, 39, 49, 1);
 
     #categories{
